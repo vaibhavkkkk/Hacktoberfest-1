@@ -10,19 +10,6 @@ void swap(int *a, int *b) {
   *b = t;
 }
 
-// function to print the array
-void printArray(int array[], int size) {
-  int i;
-  for (i = 0; i < size; i++)
-    cout << array[i] << " ";
-  cout << endl;
-}
-
-// function to rearrange array (find the partition point)
-int partition(int array[], int low, int high) {
-    
-  // select the rightmost element as pivot
-  int pivot = array[high];
   
   // pointer for greater element
   int i = (low - 1);

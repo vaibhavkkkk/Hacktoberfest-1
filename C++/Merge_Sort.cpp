@@ -20,24 +20,7 @@ void merge(int arr[], int p, int q, int r) {
   for (int j = 0; j < n2; j++)
     M[j] = arr[q + 1 + j];
 
-  // Maintain current index of sub-arrays and main array
-  int i, j, k;
-  i = 0;
-  j = 0;
-  k = p;
-
-  // Until we reach either end of either L or M, pick larger among
-  // elements L and M and place them in the correct position at A[p..r]
-  while (i < n1 && j < n2) {
-    if (L[i] <= M[j]) {
-      arr[k] = L[i];
-      i++;
-    } else {
-      arr[k] = M[j];
-      j++;
-    }
-    k++;
-  }
+  // Maintain current index of sub-arrays and main array  }
 
   // When we run out of elements in either L or M,
   // pick up the remaining elements and put in A[p..r]

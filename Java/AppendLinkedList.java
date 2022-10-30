@@ -14,20 +14,7 @@ class Main{
         }while(ch.equals("Yes"));
         System.out.print("The elements in the linked list are  ");
         list.display();
-	}
-
-
-    static class Node{
-        int data;
-        Node next;
-        public Node(int data){
-            this.data=data;
-            this.next=null;
-        }
-    }
-
-
-    static class LinkedList{
+	}tic class LinkedList{
         
         static Node head;
         Node next,temp;

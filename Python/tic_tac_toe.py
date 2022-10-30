@@ -6,24 +6,7 @@ class Tic_Tac_Toe:
   def __init__(self):
     self.board = []
 
-  def createboard(self):
-    for i in range(3):
-      row = []
-      for j in range(3):
-        row.append('-')
-      self.board.append(row)
-
-  def getrandfirst(self):
-    return random.randint(0, 1)
-
-  def fixpos(self, row, col, player):
-    self.board[row][col] = player
-
-  def wincon(self, player):
-    win = None
-    n = len(self.board)
-    for i in range(n):
-      win = True
+  def create=
       for j in range(n):
         if self.board[i][j] != player:
           win = False
